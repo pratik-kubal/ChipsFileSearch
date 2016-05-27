@@ -27,14 +27,20 @@ And when you get the option select "no" to actually use bash instead of dash
 1. Master
 
 Gen Key without passphrase
+
         ssh-keygen -t rsa
+        
 save it in default dir
 
 2. Slaves
 Now use ssh to create a directory ~/.ssh as user b on B,The directory may already exist, which is fine:
+
+
         ssh b@B mkdir -p .ssh
 
 3. Finally append a's new public key
+
+
         cat .ssh/id_rsa.pub | ssh b@B 'cat >> .ssh/authorized_keys'
 
 
