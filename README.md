@@ -6,6 +6,7 @@ Network Lab (NPL) Project on LAN file search Program using SSH
 
 It contains 2 modules:
     1. Local search module(search.sh)
+    
     2. Main ssh connection Module(main.sh)
 
 gen.sh is the UI where one can either search a file on their local computer or on their lan.
