@@ -3,12 +3,6 @@
 1.1 Introduction
 
 Network Lab (NPL) Project on LAN file search Program using SSH 
-
-It contains 2 modules:
-    1. Local search module(search.sh)
-    
-    2. Main ssh connection Module(main.sh)
-
 gen.sh is the UI where one can either search a file on their local computer or on their lan.
 
 The Program works by making a ssh connection & running the local search module on the host pc.
@@ -25,7 +19,7 @@ Before running the program you need to reconfigure BASH by
 
 And when you get the option select "no" to actually use bash instead of dash 
 
-1.3.2 Optional Passwordless Search---(http://www.linuxproblem.org/art_9.html)
+1.3.2 Optional Passwordless Search(http://www.linuxproblem.org/art_9.html)
 
 1. Master
 
