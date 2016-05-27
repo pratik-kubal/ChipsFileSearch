@@ -47,6 +47,10 @@ Now use ssh to create a directory ~/.ssh as user b on B,The directory may alread
 1.4. File Info
 
 main.sh		-> shell
+
 search.sh	-> local search
+
 gen.sh		-> Genral file with option to select
+
 search.log	-> log file of search matches
+
