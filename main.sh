@@ -2,7 +2,6 @@
 clear
 echo "---SSH Search Module---"
 echo ""
-USERNAME="computer"
 echo "Enter the number of hosts"
 read num
 COUNTER=0
@@ -31,6 +30,8 @@ while [  $COUNTER -lt $num ]; do
 		#ssh connection
 		SCRIPT="./chips/search.sh;"
 		for HOSTNAME in ${HOSTS} ; do
+			echo "Enter the Username"
+			read USERNAME
 			ssh -l ${USERNAME} ${HOSTNAME} "${SCRIPT}"
 		done
 	        let COUNTER=COUNTER+"1" 
